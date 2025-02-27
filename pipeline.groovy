@@ -16,9 +16,9 @@ pipeline {
         stage('Deploy'){
             steps{
               sh '''
-              docker build . -t tejalvaidya/3-tier:latest
-              docker push tejalvaidya/3-tier:latest
-              docker rmi tejalvaidya/3-tier:latest
+              docker build . -t tejaldocker94/3-tier:latest
+              docker push tejaldocker94/3-tier:latest
+              docker rmi tejaldocker94/3-tier:latest
               kubectl apply -f ./deploy/
               
               '''
