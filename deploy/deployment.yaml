@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: backend-app
-          image: tejalvaidya/3-tier:latest
+          image: tejaldocker94/3-tier:latest
           ports:
           - containerPort: 8080
             
