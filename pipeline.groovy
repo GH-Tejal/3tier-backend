@@ -20,6 +20,8 @@ pipeline {
               docker push tejalvaidya/3-tier:latest
               docker rmi tejalvaidya/3-tier:latest
               kubectl apply -f ./deploy/
+              
+              '''
            }
         }
     }
